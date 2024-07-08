@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <P>HELLO,WELCOME</P>
+        <img src="mypic.jpg" height="300">
+        <h1><b>I'm Mokshith</b></h1>
+        <p>Computer Science student seeking a junior developer role to enhance my programming and software engineering skills.</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Computer Science student seeking a junior developer role to enhance my programming and software engineering skills.
+            Eager to contribute to innovative projects and collaborate with a dynamic team to solve real-world problems. Possess a
+            solid foundation in Java, Python, and web development technologies. Proven ability to learn new concepts quickly and
+            apply them effectively. Strong team player with excellent communication and problem-solving skills. Looking forward to
+            leveraging my academic knowledge and hands-on project experience to add value to your organization.</p>
+        <button onclick="scrollToSection('projects')">View Projects</button>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Car Rental Management System</h3>
+            <p>Developed an Car Rental Management System web application as a mini project in DBMS, utilizing java and MySQL to
+                create a user-friendly platform for rent a car.</p>
+        </div>
+        <div class="project">
+            <h3>Smart parking lot</h3>
+            <p>Developed a smart parking lot system using Arduino Uno to monitor and display available parking spaces in real-time,
+                enhancing parking efficiency and user convenience.</p>
+        </div>
+        <button onclick="scrollToSection('contact')">Contact Me</button>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch through the following methods:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
